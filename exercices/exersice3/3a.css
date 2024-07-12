@@ -1,0 +1,116 @@
+.uber {
+    background-color: black;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 120px;
+    margin-left: 6px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .uber:hover {
+    opacity: 0.7;
+  }
+
+  .amazon {
+    margin-left: 6px;
+    background-color: rgb(255, 216, 20);
+    border: none;
+    height: 36px;
+    width: 180px;
+    border-radius: 18px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+  }
+  .amazon:hover {
+    background-color: rgb(230, 194, 10);
+  }
+
+  .github {
+    background-color: rgb(46, 164, 79);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 110px;
+    margin-left: 6px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+  }
+
+  .github:hover {
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.15);
+  }
+  .boot {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: background-color 0.15s;
+  }
+
+  .boot:hover {
+    background-color: rgb(92, 59, 142);
+  }
+
+  .download {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    height: 40px;
+    width: 120px;
+    border-color: rgb(146, 150, 154);
+    border-style: solid;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2, color 0.2s;
+  }
+
+  .download:hover {
+    background-color: rgb(108, 117, 125);
+    color: white;
+    border: none;
+  }
+  .linke {
+    height: 40px;
+    width: 260px;
+    border: none;
+    background-color: rgb(10, 102, 194);
+    color: white;
+    margin-left: 6px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.15s;
+  }
+  .linke:hover {
+    background-color: rgb(8, 80, 152);
+  }
+  .save {
+    background-color: white;
+    border-color: rgb(10, 102, 194);
+    color: rgb(10, 102, 194);
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-style: solid;
+    transition: border-width 0.1s, background-color 0.15s;
+  }
+  .save:hover {
+    border-width: 3px;
+    background-color: rgba(10, 102, 194, 0.15);
+  }

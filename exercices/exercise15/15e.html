@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>15e</title>
+
+    <style>
+      .big-box {
+        position: relative;
+
+        display: inline-block;
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-radius: 2px;
+        overflow: hidden;
+      }
+      .shirt-image {
+        width: 100%;
+      }
+      .discount-tag {
+        position: absolute;
+        top: 8px;
+        right: 0;
+        background-color: black;
+        color: rgb(215, 215, 215);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 8px;
+        padding-left: 8px;
+      }
+      .bottom-box {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 65px;
+        background-color: rgba(255, 255, 255, 0.597);
+        bottom: 0;
+        right: 0;
+        left: 0;
+      }
+      .cart-button {
+        font-weight: 500;
+        font-size: 11px;
+        background-color: white;
+        border-width: 1.5px;
+        border-radius: 2px;
+        border-style: solid;
+        border-color: black;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-right: 9px;
+        padding-left: 9px;
+        cursor: pointer;
+      }
+      .cart-button:hover {
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="big-box">
+      <img class="shirt-image" src="shirt.jpg" />
+      <div class="discount-tag">20% OFF</div>
+      <div class="bottom-box">
+        <button class="cart-button">Add to Cart</button>
+      </div>
+    </div>
+  </body>
+</html>

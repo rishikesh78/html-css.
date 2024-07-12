@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>13c,d</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      div {
+        font-family: roboto, arial;
+      }
+      .big-box {
+        border-width: 1px;
+        border-color: gray;
+        border-style: solid;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 375px;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+        border: none;
+        border-radius: 4px;
+      }
+
+      .all-inboxes {
+        font-size: 13px;
+        color: gray;
+        font-size: 500;
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+      }
+
+      .big-flexbox {
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+      }
+      .profile-picture {
+        width: 70px;
+      }
+
+      .user-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        object-fit: cover;
+        margin-left: 10px;
+        margin-top: 10px;
+      }
+
+      .small-flexbox {
+        width: 290px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .topic {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .time {
+        font-size: 14px;
+        color: gray;
+      }
+      .subject {
+        margin-top: 2px;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .content {
+        font-size: 14px;
+        color: gray;
+        margin-top: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="big-box">
+      <div class="all-inboxes">ALL INBOXES</div>
+
+      <div class="big-flexbox">
+        <div class="profile-picture">
+          <img
+            class="user-image"
+            src="/html-css-course/exercices/exercise9/cats/istockphoto-1067347086-612x612.jpg"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <div class="small-flexbox">
+            <div class="topic">Chewy Promotions</div>
+            <div class="time">4:58 PM</div>
+          </div>
+
+          <div class="subject">Biggest sales of the year!</div>
+
+          <div class="content">
+            Hey there! We're writing to tell you about our...
+          </div>
+        </div>
+      </div>
+
+      <div class="big-flexbox">
+        <div class="profile-picture">
+          <img
+            class="user-image"
+            src="/html-css-course/exercices/exercise9/cats/istockphoto-1361394182-612x612.jpg"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <div class="small-flexbox">
+            <div class="topic">Best Buy</div>
+            <div class="time">12:32 PM</div>
+          </div>
+
+          <div class="subject">Your Best Buy eReceipt</div>
+
+          <div class="content">
+            Thank you for shopping at Best Buy, here is...
+          </div>
+        </div>
+      </div>
+
+      <div class="big-flexbox">
+        <div class="profile-picture">
+          <img
+            class="user-image"
+            src="/html-css-course/exercices/exercise9/cats/istockphoto-1389862392-612x612.jpg"
+            alt=""
+          />
+        </div>
+
+        <div>
+          <div class="small-flexbox">
+            <div class="topic">Netflix</div>
+            <div class="time">9:00 AM</div>
+          </div>
+
+          <div class="subject">Here's what's coming soon to Netfilx</div>
+
+          <div class="content">
+            Brand new movies and shows, old favorites...
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

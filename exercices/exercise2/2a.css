@@ -1,0 +1,80 @@
+.uber {
+    background-color: black;
+    color: white;
+    border: none;
+    height: 36px;
+    width: 120px;
+    margin-left: 6px;
+    cursor: pointer;
+  }
+
+  .amazon {
+    margin-left: 6px;
+    background-color: rgb(255, 216, 20);
+    border: none;
+    height: 36px;
+    width: 180px;
+    border-radius: 18px;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .github {
+    background-color: rgb(46, 164, 79);
+    color: white;
+    border: none;
+    height: 40px;
+    width: 110px;
+    margin-left: 6px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .boot {
+    background-color: rgb(121, 82, 179);
+    color: white;
+    height: 40px;
+    width: 120px;
+    border: none;
+    border-radius: 6px;
+    margin-left: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .download {
+    background-color: white;
+    color: rgb(108, 117, 125);
+    height: 40px;
+    width: 120px;
+    border-color: rgb(146, 150, 154);
+    border-style: solid;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .linke {
+    height: 40px;
+    width: 260px;
+    border: none;
+    background-color: rgb(10, 102, 194);
+    color: white;
+    margin-left: 6px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  .save {
+    background-color: white;
+    border-color: rgb(10, 102, 194);
+    color: rgb(10, 102, 194);
+    height: 40px;
+    width: 100px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    border-style: solid;
+  }

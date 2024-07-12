@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>13b</title>
+
+    <style>
+      .flexbox {
+        display: flex;
+        height: 60px;
+      }
+      .element-1 {
+        width: 100px;
+        background-color: lightpink;
+      }
+
+      .element-2 {
+        width: 200px;
+        background-color: lightblue;
+      }
+
+      .nested {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .row3,
+      .row4 {
+        color: white;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexbox">
+      <div class="element-1">.</div>
+
+      <div class="element-2">
+        <div class="row1">row1</div>
+        <div class="nested">
+          <div class="row3">row2</div>
+          <div class="row4">row2</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

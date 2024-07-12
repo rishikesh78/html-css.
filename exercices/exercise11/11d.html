@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>grid</title>
+
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 140px 140px 140px;
+        column-gap: 20px;
+        margin-left: 8px;
+        margin-top: 8px;
+      }
+      .profile-pic {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+      }
+      .name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-left: 6px;
+      }
+
+      .mutual-friends {
+        margin-top: 4px;
+        margin-left: 6px;
+        display: grid;
+        grid-template-columns: 20px 1fr;
+        column-gap: 7px;
+        align-items: center;
+      }
+
+      .fri-pic {
+        width: 100%;
+        height: 20px;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+      .friends {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: grey;
+        margin-bottom: 4px;
+      }
+
+      .add {
+        margin-left: 6px;
+        background-color: rgb(49, 118, 203);
+        color: white;
+        border: none;
+        margin-top: 4px;
+        font-size: 12px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+      .add:hover {
+        background-color: rgb(16, 107, 218);
+      }
+      .add:active {
+        opacity: 0.8;
+      }
+
+      .account {
+        padding-bottom: 6px;
+        box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="account">
+        <div>
+          <img
+            class="profile-pic"
+            src="/html-css-course/exercices/exercise9/cats/istockphoto-1067347086-612x612.jpg"
+          />
+        </div>
+
+        <div>
+          <p class="name">oliver</p>
+        </div>
+
+        <div class="mutual-friends">
+          <div>
+            <img
+              class="fri-pic"
+              src="/html-css-course/exercices/exercise9/cats/download.jpeg"
+            />
+          </div>
+
+          <div>
+            <p class="friends">2 mutual friends</p>
+          </div>
+        </div>
+
+        <div>
+          <button class="add">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="account">
+        <div>
+          <img
+            class="profile-pic"
+            src="/html-css-course/exercices/exercise9/cats/istockphoto-1361394182-612x612.jpg"
+          />
+        </div>
+
+        <div>
+          <p class="name">Mimi</p>
+        </div>
+
+        <div class="mutual-friends">
+          <div>
+            <img
+              class="fri-pic"
+              src="/html-css-course/exercices/exercise9/cats/download.jpeg"
+            />
+          </div>
+
+          <div>
+            <p class="friends">3 mutual friends</p>
+          </div>
+        </div>
+
+        <div>
+          <button class="add">Add Friend</button>
+        </div>
+      </div>
+
+      <div class="account">
+        <div>
+          <img
+            class="profile-pic"
+            src="/html-css-course/exercices/exercise9/cats/istockphoto-1389862392-612x612.jpg"
+          />
+        </div>
+
+        <div>
+          <p class="name">Rex</p>
+        </div>
+
+        <div class="mutual-friends">
+          <div>
+            <img
+              class="fri-pic"
+              src="/html-css-course/exercices/exercise9/cats/download.jpeg"
+            />
+          </div>
+
+          <div>
+            <p class="friends">4 mutual friends</p>
+          </div>
+        </div>
+
+        <div>
+          <button class="add">Add Friend</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

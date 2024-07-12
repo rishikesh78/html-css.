@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>13f</title>
+
+    <style>
+      div {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .tweet {
+        display: flex;
+        width: 420px;
+        margin-top: 10px;
+        margin-left: 10px;
+        border-style: solid;
+        padding-right: 15px;
+        padding-bottom: 13px;
+        line-height: 20px;
+        border: none;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+        border-radius: 4px;
+      }
+
+      .image {
+        margin-right: 10px;
+      }
+
+      .profile-image {
+        width: 55px;
+        height: 55px;
+        object-fit: cover;
+        border-radius: 28px;
+        margin-left: 12px;
+        margin-top: 8px;
+      }
+
+      .profile-detail {
+        display: flex;
+        margin-top: 8px;
+      }
+
+      .profile-name {
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 4px;
+      }
+      .profile-id {
+        font-size: 15px;
+        color: gray;
+      }
+      .tweet-text {
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 5px;
+      }
+
+      .video-preview {
+        display: flex;
+        margin-top: 13px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgb(197, 194, 194);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+      .video-thumbnail {
+        width: 130px;
+        background-color: rgb(197, 194, 194);
+      }
+      .video-detail {
+        padding-left: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .website-link {
+        font-size: 15px;
+        color: rgb(116, 115, 115);
+        padding-bottom: 4px;
+      }
+      .video-title {
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tweet">
+      <div class="image">
+        <img
+          class="profile-image"
+          src="/html-css-course/exercices/exercise9/cats/istockphoto-1067347086-612x612.jpg"
+          alt=""
+        />
+      </div>
+
+      <div class="content">
+        <div class="profile-detail">
+          <div class="profile-name">supersimple.dev</div>
+          <div class="profile-id">@SuperSimpleDev</div>
+        </div>
+        <div class="tweet-text">
+          What is backend web development? A complete overview. New video is up!
+        </div>
+        <div class="video-preview-block">
+          <div class="video-preview">
+            <div class="video-thumbnail"></div>
+            <div class="video-detail">
+              <div class="website-link">youtube.com</div>
+              <div class="video-title">
+                Backend web development - a complete overview (2021)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
