@@ -1,0 +1,147 @@
+
+  .thumbnail {
+    width: 100%;
+  }
+  
+
+  .video-title {
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 10px;
+  }
+  .video-info a{
+    text-decoration: none;
+    color: black;
+  }
+
+  .video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+
+  .profile-pic {
+    width: 36px;
+    border-radius: 50px;
+  }
+
+  .thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .video-author,
+  .video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+  }
+
+  .video-author {
+    margin-bottom: 4px;
+    cursor: pointer;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+  }
+
+  @media (max-width: 750px) {
+
+    .video-grid{
+      grid-template-columns: 1fr 1fr ;
+    }
+
+  }
+
+  @media (min-width:750.1) and (max-width:999.9)
+  {
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1000px)
+  {
+    .video-grid{
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
+  }
+
+ 
+
+  .video-time {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px ;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+
+  }
+
+  
+
+  .profile-pic-div{
+    display: inline-block;
+    position: relative;
+
+  }
+
+  .profile-pic-div .tooltip{
+    position: absolute;
+    display: flex;
+    background-color: white;
+    white-space: nowrap;
+    border-radius: 6px;
+    box-shadow: 1px 1px 12px rgba(0,0,0,0.3);
+    
+    align-items: center;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-bottom: 6px;
+    padding-right: 12px;
+    bottom: -72px;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 3;
+
+
+  }
+  .profile-pic-div:hover .tooltip{
+    opacity: 1;
+  }
+
+  
+
+  .hover-channel-picture{
+    width: 50;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+
+  .hover-info{
+    margin-left: 6px;
+  }
+
+  .youtuber-name{
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  .youtuber-subscribers{
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 6px;
+  }
+
+  
