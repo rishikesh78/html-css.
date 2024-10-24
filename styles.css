@@ -1,0 +1,455 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #0f0a0a;
+  background-color: #f3f3f3;
+}
+
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  z-index: 10;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff9800; /* Change text color on hover */
+
+}
+
+.navbar .nav-links a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  color: #ff7f50;
+}
+
+.navbar a {
+  color: black; /* Color of text */
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  border-radius: 5px;
+  position: relative;
+  transition: color 0.3s ease; /* Smooth color transition */
+  font-weight: bold;
+}
+
+.navbar a::before {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Position at the bottom of the element */
+  left: 50%; /* Start at the center */
+  width: 0;
+  height: 2px; /* Underline thickness */
+  background-color: #ff9800; /* Underline color */
+  transition: all 0.3s ease;
+  transform: translateX(-50%); /* Center the underline */
+}
+
+.navbar a:hover::before {
+  width: 100%; /* Expand to full width */
+}
+
+.navbar a:hover {
+  color: #ff9800; /* Change text color on hover */
+}
+
+
+/* Hero Section */
+.hero {
+  background: url('https://thumbs.dreamstime.com/b/close-up-bees-sit-honeycombs-honey-bee-frame-beehive-beekeeping-sealing-breeding-keeping-macro-shot-332579508.jpg') no-repeat center center/cover;
+  color: black(98, 98, 7, 0.76);
+  text-align: center;
+  padding: 150px 20px;
+  position: relative;
+  background-color: rgba(244, 235, 235, 0.595); 
+  margin-bottom: 10px;
+  z-index: 2;
+
+}
+
+
+
+
+.hero h1 {
+  font-size: 48px;
+  z-index: 2;
+  color: #ff9800; /* Change text color on hover */
+
+
+}
+
+.hero p {
+  font-size: 22px;
+  z-index: 2;
+
+}
+
+.cta-btn {
+  margin-top: 10px;
+  background-color: #ff7f50;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  z-index: 100;
+}
+
+.cta-btn:hover {
+  background-color: #ff5733;
+}
+
+/* Infographics Section */
+
+.infographics {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.infographics h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.infographic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.infographic-card {
+  background-color: #ffeeba;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.infographic-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  width: 100%; /* Full width within the card */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Keeps aspect ratio and covers the area */
+  border-radius: 10px; /* Optional: Gives rounded corners to the images */
+}
+
+.infographic-card p {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.infographic-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.infographic-card::after {
+  content: attr(data-hover-text);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: none;
+}
+
+.infographic-card:hover::after {
+  display: block;
+}
+
+/* Hive Adoption Tracker */
+.tracker {
+  padding: 60px 20px;
+  background-color: #dff0d8;
+  text-align: center;
+}
+
+.tracker h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.tracker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tracker-stats {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.tracker-bar {
+  width: 80%;
+  background-color: #f0f0f0;
+  height: 25px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress {
+  height: 100%;
+  width: 45%;
+  background-color: #ff7f50;
+  transition: width 0.3s ease;
+}
+
+.adopt-btn {
+  background-color: #ff7f50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.adopt-btn:hover {
+  background-color: #ff5733;
+}
+
+/* Pollinator-Friendly Gardening Guide */
+.gardening-guide {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.gardening-guide h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.guide-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.guide-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.guide-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.guide-card p {
+  font-size: 16px;
+}
+
+.guide-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Workshops and Products */
+.workshops {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #fff3cd;
+}
+
+.workshops h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* Workshop Section Styles */
+.workshop {
+  padding: 60px 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.workshop h2 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #444;
+}
+.workshop .product-card img {
+  width: 100%; /* Full width within the card */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Maintains aspect ratio while covering the area */
+  border-radius: 10px; /* Optional: Rounded corners for better styling */
+}
+
+
+.workshop .product-card h3 {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.workshop-card .product-card {
+  font-size: 16px;
+  color: #666;
+}
+
+.workshop-card button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #ffb100;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.workshop-card button:hover {
+  background-color: #ff8c00;
+  transform: scale(1.05);
+}
+
+.workshop-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  margin-top: 10px;
+  background-color: #ff7f50;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.product-card button:hover {
+  background-color: #ff5733;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.contact {
+  padding: 60px 30px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #444;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact input, .contact textarea {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+.contact button {
+  padding: 12px;
+  font-size: 18px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background-color: #218838;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+footer .social-icons a:hover {
+  color: #ff7f50;
+}
